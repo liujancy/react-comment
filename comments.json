@@ -15,11 +15,6 @@
         "text": "*abc*"
     },
     {
-        "id": 1464988636500,
-        "author": "ben",
-        "text": "*abc*"
-    },
-    {
         "id": 1464988717637,
         "author": "evil",
         "text": "<a href=\"javascript:alert(1)\">alert(1)</a>"
@@ -28,10 +23,6 @@
         "id": 1491960218585,
         "author": "亮亮",
         "text": "今天天气不错哟！"
-    },
-    {
-        "id": 1491960230729,
-        "author": "jiajia",
-        "text": "liangliang"
     }
+
 ]
