@@ -50,6 +50,28 @@ var CommentForm = React.createClass({
     }
 });
 
+var CommentForm = React.createClass({
+  //保存用户的输入
+  getInitialState: function () {
+    return {author:'',text:''}
+  },
+  handleAuthorChange: function (e) {
+    this.setState({author: e.target.value});
+  },
+  handleTextChange: function (e) {
+    return ({text:e.target.value});
+  },
+  render: function () {
+    return (
+      <form className="commentForm">
+        <input type="text" placeholder="名字" value={this.state.author} onChange={this.handleAuthorChange}/>
+        <input type="text" placeholder="你的评论..." value={this.state.text} onChange={this.handleTextChange} />
+        <input type="submit" value='提交'/>
+      </form>
+    )
+  }
+});
+
 var CommentBox = React.createClass({
   loadCommentsFromServer: function () {
     $.ajax({
