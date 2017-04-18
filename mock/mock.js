@@ -3,7 +3,7 @@
  */
 var ProductCategoryRow = React.createClass({
   render:function () {
-    return (<tr><th colSpan="2">{this.props.categry}</th></tr>);
+    return (<tr><th colSpan="2">{this.props.category}</th></tr>);
   }
 });
 
@@ -29,7 +29,7 @@ var ProductTable = React.createClass({
       if(product.category !== lastCategory){
         rows.push(<ProductCategoryRow category={product.category} key={product.category}/> )
       }
-      rows.push(<ProductRow product={product} key={product.name}/> )
+      rows.push(<ProductRow product={product} key={product.name}/> );
       lastCategory = product.category;
     });
 
